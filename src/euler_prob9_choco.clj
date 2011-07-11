@@ -14,7 +14,7 @@
         triple (Choco/eq (Choco/plus (Choco/mult a a) (Choco/mult b b)) (Choco/mult c c))
         m (new CPModel)]
     (.addConstraint m triple)
-    (.addConstraint m (Choco/eq (Choco/minus 1000 (Choco/plus a b)) c))
+    (.addConstraint m (Choco/eq (Choco/minus 840 (Choco/plus a b)) c))
     (.addConstraint m (Choco/lt a b))
     (.addConstraint m (Choco/lt b c))
     (.addConstraint m (Choco/gt (Choco/plus a b) c))
